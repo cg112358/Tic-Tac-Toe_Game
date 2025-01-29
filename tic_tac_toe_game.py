@@ -22,4 +22,14 @@ class Tic_Tac_Toe:
         no = len(self.grid)
         board_value = set()
 
-        
+        # Check rows
+        for i in range(no):
+            for j in range(no):
+                grid_values.add(self.grid[i][j])
+            
+            if grid_values == {player}:
+                return True
+            else:
+                grid_values.clear()
+
+        # Check columns
