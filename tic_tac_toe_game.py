@@ -12,4 +12,14 @@ class Tic_Tac_Toe:
                 row.append('-')
             self.grid.append(row)
 
+    def get_random_first_player(self):
+        return random.randit(0, 1)
     
+    def fix_spot(self, row, column, player):
+        self.grid[row][column] = player
+
+    def did_player_win(self, player):
+        no = len(self.grid)
+        board_value = set()
+
+        
