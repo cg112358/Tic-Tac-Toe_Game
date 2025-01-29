@@ -20,7 +20,7 @@ class Tic_Tac_Toe:
 
     def did_player_win(self, player):
         no = len(self.grid)
-        board_value = set()
+        grid_values = set()
 
         # Check rows
         for i in range(no):
