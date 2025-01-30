@@ -79,6 +79,7 @@ class Tic_Tac_Toe:
         player = 'X' if self.get_random_first_player() == 1 else 'O'
         game_over = False
 
+        # Game loop
         while not game_over:
             try:
                 self.show_grid()
@@ -111,6 +112,7 @@ class Tic_Tac_Toe:
             except ValueError as err:
                 print(err)
         
+        # End of game loop
         print()
         self.show_grid()
 
