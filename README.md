@@ -1,2 +1,2 @@
 # Tic-Tac-Toe_Game
- A gaame that can be played by two players in the terminal.
+ A game that can be played by two players in the terminal.
